@@ -1,0 +1,27 @@
+<div class="project-card" *ngIf="project">
+  <div class="card-image">
+    <img [src]="project.imageUrl" [alt]="project.name">
+  </div>
+  
+  <div class="card-content">
+    <h3 class="card-title">{{ project.name }}</h3>
+    
+    <div class="card-meta">
+      <div class="tech-tags">
+        <span class="tag" *ngFor="let tech of project.technologies" [ngClass]="tech.toLowerCase()">
+          {{ tech }}
+        </span>
+      </div>
+      <div class="difficulty-tag" [ngClass]="project.difficulty.toLowerCase()">
+        <span class="dot"></span> {{ project.difficulty }}
+      </div>
+    </div>
+    
+    <p class="card-description">{{ project.description }}</p>
+    
+    <div class="card-actions">
+      <a [href]="project.liveDemoUrl" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Ver demo</a>
+      <a [href]="project.viewCodeUrl" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Ver código</a>
+    </div>
+  </div>
+</div>

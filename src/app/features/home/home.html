@@ -1,0 +1,43 @@
+<div class="portfolio-container">
+  <!-- Hero Section -->
+  <app-hero-section></app-hero-section>
+
+  <!-- Frontend Mentor Levels -->
+  <app-level-section 
+    title="Frontend Mentor: Novato" 
+    subtitle="Fundamentos de HTML y CSS. Construcción de componentes básicos y layouts simples."
+    themeClass="newbie"
+    [projects]="newbieProjects">
+  </app-level-section>
+
+  <app-level-section 
+    title="Frontend Mentor: Junior" 
+    subtitle="Componentes más complejos y pequeñas páginas de aterrizaje. Uso básico de JavaScript."
+    themeClass="junior"
+    [projects]="juniorProjects">
+  </app-level-section>
+
+  <app-level-section 
+    title="Frontend Mentor: Intermedio" 
+    subtitle="Aplicaciones pequeñas que requieren manejo de estado e integraciones con APIs o JSON."
+    themeClass="intermediate"
+    [projects]="intermediateProjects">
+  </app-level-section>
+
+  <app-level-section 
+    title="Frontend Mentor: Avanzado" 
+    subtitle="Proyectos multi-página complejos que requieren frameworks y arquitecturas robustas."
+    themeClass="advanced"
+    [projects]="advancedProjects">
+  </app-level-section>
+  
+  <app-level-section 
+    title="Frontend Mentor: Gurú" 
+    subtitle="El nivel máximo. Aplicaciones Full-Stack a gran escala con lógicas de negocio intensivas."
+    themeClass="guru"
+    [projects]="guruProjects">
+  </app-level-section>
+
+  <!-- Personal Projects Section -->
+  <app-personal-projects></app-personal-projects>
+</div>

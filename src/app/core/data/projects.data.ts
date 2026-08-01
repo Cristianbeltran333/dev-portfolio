@@ -1,0 +1,214 @@
+import { Project } from '../models/project';
+
+export const PROJECTS_DATA: Project[] = [
+  {
+    id: 'stats-preview-card',
+    name: 'Tarjeta de vista previa de estadísticas',
+    description: 'Este es un pequeño reto ideal para que te familiarices con el diseño. Este proyecto no incluye JavaScript, así que podrás concentrarte en tus habilidades de HTML y CSS.',
+    difficulty: 'Novato',
+    technologies: ['HTML', 'CSS'],
+    liveDemoUrl: 'https://stats-preview-card-ashen-one.vercel.app',
+    viewCodeUrl: 'https://github.com/Cristianbeltran333/stats-preview-card',
+    imageUrl: '/images/Stats Preview Card.webp'
+  },
+  {
+    id: 'social-proof-section',
+    name: 'Sección de prueba social',
+    description: 'Este proyecto pondrá a prueba tus habilidades de maquetación. Si ya empiezas a sentirte seguro con Flexbox o Grid, ¡este proyecto te supondrá un buen reto!',
+    difficulty: 'Novato',
+    technologies: ['HTML', 'CSS'],
+    liveDemoUrl: 'https://social-proof-section-one-rouge.vercel.app/',
+    viewCodeUrl: 'https://github.com/Cristianbeltran333/social-proof-section',
+    imageUrl: '/images/Social Proof Section.webp'
+  },
+  {
+    id: 'social-links-profile',
+    name: 'Perfil con enlaces a redes sociales',
+    description: 'En este pequeño proyecto, crearás tu perfil para compartir enlaces en redes sociales. ¡Incluso puedes personalizarlo y usarlo para compartir todos tus perfiles sociales!',
+    difficulty: 'Novato',
+    technologies: ['HTML', 'CSS'],
+    liveDemoUrl: 'https://social-links-profile-nine-mocha.vercel.app/',
+    viewCodeUrl: 'https://github.com/Cristianbeltran333/social-links-profile',
+    imageUrl: '/images/Social links profile.webp'
+  },
+  {
+    id: 'single-price-grid',
+    name: 'Cuadrícula de precio único',
+    description: 'En este desafío, deberás desarrollar el componente de precios para los diseños proporcionados. Es ideal para principiantes y para quienes buscan un reto más sencillo.',
+    difficulty: 'Novato',
+    technologies: ['HTML', 'CSS'],
+    liveDemoUrl: 'https://single-price-grid-chi-three.vercel.app/',
+    viewCodeUrl: 'https://github.com/Cristianbeltran333/single-price-grid',
+    imageUrl: '/images/Single Price Grid.webp'
+  },
+  {
+    id: 'results-summary',
+    name: 'Resumen de resultados',
+    description: 'Este reto tiene algo para todos. Es un proyecto solo con HTML y CSS, pero también hemos proporcionado un archivo JSON con los resultados de las pruebas para quienes quieran practicar JavaScript.',
+    difficulty: 'Novato',
+    technologies: ['HTML', 'CSS'],
+    liveDemoUrl: 'https://results-summary-indol.vercel.app/',
+    viewCodeUrl: 'https://github.com/Cristianbeltran333/results-summary',
+    imageUrl: '/images/results-summary.webp'
+  },
+  {
+    id: 'recipe-page',
+    name: 'Página de recetas',
+    description: 'Este reto te ayudará a centrarte en escribir HTML semántico. Asegúrate de analizar qué elementos HTML son los más adecuados para cada fragmento de contenido.',
+    difficulty: 'Novato',
+    technologies: ['HTML', 'CSS'],
+    liveDemoUrl: 'https://recipe-page-taupe-three.vercel.app/',
+    viewCodeUrl: 'https://github.com/Cristianbeltran333/recipe-page',
+    imageUrl: '/images/recipe-page.webp'
+  },
+  {
+    id: 'qr-code',
+    name: 'Código QR',
+    description: 'Un reto perfecto para quienes se inician en HTML y CSS. El diseño de la tarjeta no cambia, por lo que es ideal si aún no has aprendido a crear diseños responsivos.',
+    difficulty: 'Novato',
+    technologies: ['HTML', 'CSS'],
+    liveDemoUrl: 'https://qr-code-beta-livid-19.vercel.app/',
+    viewCodeUrl: 'https://github.com/Cristianbeltran333/qr-code',
+    imageUrl: '/images/qr-code.webp'
+  },
+  {
+    id: 'profile-card',
+    name: 'Tarjeta de perfil',
+    description: 'Este es un reto perfecto para poner a prueba tus habilidades de diseño. El diseño de las tarjetas no cambia, ¡así que también es ideal para quienes aún no se han adentrado en el mundo de los sitios web responsivos!',
+    difficulty: 'Novato',
+    technologies: ['HTML', 'CSS'],
+    liveDemoUrl: 'https://profile-card-one-peach.vercel.app/',
+    viewCodeUrl: 'https://github.com/Cristianbeltran333/profile-card',
+    imageUrl: '/images/profile-card.webp'
+  },
+  {
+    id: 'product-preview-card',
+    name: 'Tarjeta de vista previa del producto',
+    description: 'Este reto, que solo utiliza HTML y CSS, será perfecto para cualquiera que esté empezando a crear proyectos responsivos.',
+    difficulty: 'Novato',
+    technologies: ['HTML', 'CSS'],
+    liveDemoUrl: 'https://product-preview-card-mu-five.vercel.app/',
+    viewCodeUrl: 'https://github.com/Cristianbeltran333/product-preview-card',
+    imageUrl: '/images/Product preview card component.webp'
+  },
+  {
+    id: 'ping-coming-soon',
+    name: 'Ping de una sola columna',
+    description: 'Este reto es ideal para principiantes y ofrece la oportunidad de practicar la validación básica de formularios del lado del cliente.',
+    difficulty: 'Novato',
+    technologies: ['HTML', 'CSS', 'JS'],
+    liveDemoUrl: 'https://ping-coming-soon-gold.vercel.app/',
+    viewCodeUrl: 'https://github.com/Cristianbeltran333/ping-coming-soon',
+    imageUrl: '/images/ping-coming-soon.webp'
+  },
+  {
+    id: 'order-summary',
+    name: 'Resumen del pedido',
+    description: '¡Un proyecto perfecto para principiantes que están empezando a ganar confianza con los diseños!',
+    difficulty: 'Novato',
+    technologies: ['HTML', 'CSS'],
+    liveDemoUrl: 'https://order-summary-psi-bay.vercel.app/',
+    viewCodeUrl: 'https://github.com/Cristianbeltran333/order-summary',
+    imageUrl: '/images/order-summary.webp'
+  },
+  {
+    id: 'nft-preview-card',
+    name: 'Tarjeta de vista previa NFT',
+    description: 'Este reto, que solo utiliza HTML y CSS, es perfecto para quienes están empezando o para quienes desean un pequeño proyecto con el que experimentar.',
+    difficulty: 'Novato',
+    technologies: ['HTML', 'CSS'],
+    liveDemoUrl: 'https://nft-preview-card-theta-seven.vercel.app/',
+    viewCodeUrl: 'https://github.com/Cristianbeltran333/nft-preview-card',
+    imageUrl: '/images/nft-preview-card.webp'
+  },
+  {
+    id: 'intro-with-signup-form',
+    name: 'Introducción con formulario de registro',
+    description: 'Practica la creación de un formulario de registro completo con validación del lado del cliente utilizando JavaScript.',
+    difficulty: 'Novato',
+    technologies: ['HTML', 'CSS', 'JS'],
+    liveDemoUrl: 'https://intro-with-signup-form-lilac.vercel.app/',
+    viewCodeUrl: 'https://github.com/Cristianbeltran333/intro-with-signup-form',
+    imageUrl: '/images/intro-with-signup-form.webp'
+  },
+  {
+    id: 'interactive-rating',
+    name: 'Calificación interactiva',
+    description: 'Un componente de calificación interactivo. Requiere actualizar el DOM según la selección del usuario.',
+    difficulty: 'Novato',
+    technologies: ['HTML', 'CSS', 'JS'],
+    liveDemoUrl: 'https://interactive-rating-green-ten.vercel.app/',
+    viewCodeUrl: 'https://github.com/Cristianbeltran333/interactive-rating',
+    imageUrl: '/images/Interactive rating component.webp'
+  },
+  {
+    id: 'huddle-landing',
+    name: 'Página de inicio de Huddle con una única sección introductoria.',
+    description: 'Este proyecto, un reto perfecto para principiantes, te permitirá trabajar con un diseño de dos columnas.',
+    difficulty: 'Novato',
+    technologies: ['HTML', 'CSS'],
+    liveDemoUrl: 'https://huddle-landing-chi.vercel.app/',
+    viewCodeUrl: 'https://github.com/Cristianbeltran333/huddle-landing',
+    imageUrl: '/images/huddle-landing.webp'
+  },
+  {
+    id: 'four-card-feature-section',
+    name: 'Sección de características de cuatro cartas',
+    description: 'Un buen reto de diseño para principiantes. Pondrá a prueba a cualquiera que no esté familiarizado con los diseños de varias columnas y los diseños responsivos.',
+    difficulty: 'Novato',
+    technologies: ['HTML', 'CSS'],
+    liveDemoUrl: 'https://four-card-feature-section-dun-three.vercel.app/',
+    viewCodeUrl: 'https://github.com/Cristianbeltran333/four-card-feature-section',
+    imageUrl: '/images/four-card-feature-section.webp'
+  },
+  {
+    id: 'faq-accordion',
+    name: 'Acordeón de preguntas frecuentes',
+    description: 'En este desafío, crearás un acordeón de preguntas frecuentes. Este es un patrón de diseño front-end muy común, ¡así que es una excelente oportunidad para practicar!',
+    difficulty: 'Novato',
+    technologies: ['HTML', 'CSS', 'JS'],
+    liveDemoUrl: 'https://faq-accordion-nine-gamma.vercel.app/',
+    viewCodeUrl: 'https://github.com/Cristianbeltran333/faq-accordion',
+    imageUrl: '/images/faq-accordion.webp'
+  },
+  {
+    id: 'blog-preview-card',
+    name: 'Tarjeta de vista previa del blog',
+    description: 'Este reto, que solo utiliza HTML y CSS, es un proyecto perfecto para principiantes que desean familiarizarse rápidamente con los fundamentos de HTML y CSS, como la estructura HTML y el modelo de caja.',
+    difficulty: 'Novato',
+    technologies: ['HTML', 'CSS'],
+    liveDemoUrl: 'https://blog-preview-card-hazel-one.vercel.app/',
+    viewCodeUrl: 'https://github.com/Cristianbeltran333/blog-preview-card',
+    imageUrl: '/images/blog-preview-card.webp'
+  },
+  {
+    id: 'base-apparel-coming-soon',
+    name: 'Página de ropa básica próximamente',
+    description: 'Este diseño parece bastante sencillo, pero tiene algunos detalles interesantes que pondrán a prueba tus habilidades con CSS. También podrás practicar la validación básica de formularios.',
+    difficulty: 'Novato',
+    technologies: ['HTML', 'CSS', 'JS'],
+    liveDemoUrl: 'https://base-apparel-coming-soon-zeta.vercel.app/',
+    viewCodeUrl: 'https://github.com/Cristianbeltran333/base-apparel-coming-soon',
+    imageUrl: '/images/base-apparel-coming-soon.webp'
+  },
+  {
+    id: 'article-preview',
+    name: 'Vista previa del artículo',
+    description: 'Practica tus habilidades de maquetación con este componente de vista previa de artículos. También puedes divertirte mucho experimentando con las animaciones de los iconos para compartir.',
+    difficulty: 'Novato',
+    technologies: ['HTML', 'CSS', 'JS'],
+    liveDemoUrl: 'https://article-preview-two-gilt.vercel.app/',
+    viewCodeUrl: 'https://github.com/Cristianbeltran333/article-preview',
+    imageUrl: '/images/article-preview.webp'
+  },
+  {
+    id: '3-column-preview-card',
+    name: 'Tarjeta de vista previa de 3 columnas',
+    description: 'Este reto es perfecto si estás empezando. El cambio entre los diseños será una buena prueba si eres nuevo en la creación de proyectos responsivos.',
+    difficulty: 'Novato',
+    technologies: ['HTML', 'CSS'],
+    liveDemoUrl: 'https://3-column-preview-card-five-tawny.vercel.app/',
+    viewCodeUrl: 'https://github.com/Cristianbeltran333/3-column-preview-card',
+    imageUrl: '/images/3-column-preview-card.webp'
+  }
+];

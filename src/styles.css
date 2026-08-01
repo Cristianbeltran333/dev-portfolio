@@ -1,1 +1,82 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  /* Color Palette */
+  --bg-main: #0B0F19; /* Very dark blue/black */
+  --bg-card: #141C2F; /* Slightly lighter card background */
+  --bg-card-hover: #1E293B;
+  
+  --text-primary: #FFFFFF;
+  --text-secondary: #94A3B8;
+  
+  --primary-color: #3B82F6; /* Blue for Live Demo */
+  --primary-hover: #2563EB;
+  
+  --secondary-color: #1E293B; /* Dark grey for View Code */
+  --secondary-hover: #334155;
+  
+  /* Tags */
+  --tag-html-bg: rgba(59, 130, 246, 0.1);
+  --tag-html-text: #60A5FA;
+  
+  --tag-css-bg: rgba(234, 179, 8, 0.1);
+  --tag-css-text: #FACC15;
+  
+  --tag-js-bg: rgba(244, 63, 94, 0.1);
+  --tag-js-text: #FB7185;
+  
+  /* Difficulty */
+  --diff-newbie: #06B6D4;
+  --diff-junior: #10B981;
+  --diff-intermediate: #F59E0B;
+  --diff-advanced: #F43F5E;
+  --diff-guru: #8B5CF6;
+  
+  /* Utilities */
+  --border-radius: 12px;
+  --transition: all 0.3s ease;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Base Buttons for reusability */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: var(--transition);
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--text-primary);
+}
+
+.btn-secondary:hover {
+  background-color: var(--secondary-hover);
+}

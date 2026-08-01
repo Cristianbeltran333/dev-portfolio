@@ -1,0 +1,119 @@
+.project-card {
+  background-color: var(--bg-card);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  height: 100%;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  background-color: var(--bg-card-hover);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .card-image img {
+  transform: scale(1.05);
+}
+
+.card-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-title {
+  margin: 0 0 1rem 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.tech-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.tag.html { background-color: var(--tag-html-bg); color: var(--tag-html-text); }
+.tag.css { background-color: var(--tag-css-bg); color: var(--tag-css-text); }
+.tag.js { background-color: var(--tag-js-bg); color: var(--tag-js-text); }
+
+.difficulty-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.difficulty-tag .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.difficulty-tag.novato .dot { background-color: var(--diff-newbie); box-shadow: 0 0 8px var(--diff-newbie); }
+.difficulty-tag.novato { color: var(--diff-newbie); }
+
+.difficulty-tag.junior .dot { background-color: var(--diff-junior); box-shadow: 0 0 8px var(--diff-junior); }
+.difficulty-tag.junior { color: var(--diff-junior); }
+
+.difficulty-tag.intermedio .dot { background-color: var(--diff-intermediate); box-shadow: 0 0 8px var(--diff-intermediate); }
+.difficulty-tag.intermedio { color: var(--diff-intermediate); }
+
+.difficulty-tag.avanzado .dot { background-color: var(--diff-advanced); box-shadow: 0 0 8px var(--diff-advanced); }
+.difficulty-tag.avanzado { color: var(--diff-advanced); }
+
+.difficulty-tag.gurú .dot { background-color: var(--diff-guru); box-shadow: 0 0 8px var(--diff-guru); }
+.difficulty-tag.gurú { color: var(--diff-guru); }
+
+.card-description {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0 0 1.5rem 0;
+  flex-grow: 1;
+}
+
+.card-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: auto;
+}
