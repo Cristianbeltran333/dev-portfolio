@@ -2,6 +2,16 @@ import { Project } from '../models/project';
 
 export const PROJECTS_DATA: Project[] = [
   {
+    id: 'hotel-booking-confirmation-page',
+    name: 'Página de confirmación de reserva de hotel',
+    description: 'Practica el diseño y la tipografía creando esta página de confirmación de reserva de un hotel boutique, que incluye tarjetas superpuestas, una barra lateral con la marca y un diseño totalmente adaptable.',
+    difficulty: 'Junior',
+    technologies: ['HTML', 'CSS', 'JS'],
+    liveDemoUrl: 'https://hotel-booking-confirmation-page-eight.vercel.app/',
+    viewCodeUrl: 'https://github.com/Cristianbeltran333/hotel-booking-confirmation-page',
+    imageUrl: '/images/hotel-booking-confirmation-page.webp'
+  },
+  {
     id: 'stats-preview-card',
     name: 'Tarjeta de vista previa de estadísticas',
     description: 'Este es un pequeño reto ideal para que te familiarices con el diseño. Este proyecto no incluye JavaScript, así que podrás concentrarte en tus habilidades de HTML y CSS.',
