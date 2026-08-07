@@ -4,7 +4,21 @@
   </div>
   
   <div class="card-content">
-    <h3 class="card-title">{{ project.name }}</h3>
+    <div class="card-title-row">
+      <h3 class="card-title">{{ project.name }}</h3>
+      <button 
+        class="info-btn" 
+        *ngIf="project.instructions && project.instructions.length > 0"
+        (click)="openInstructions($event)"
+        aria-label="Ver instrucciones"
+      >
+        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="16" x2="12" y2="12"></line>
+          <line x1="12" y1="8" x2="12.01" y2="8"></line>
+        </svg>
+      </button>
+    </div>
     
     <div class="card-meta">
       <div class="tech-tags">
@@ -24,4 +38,19 @@
       <a [href]="project.viewCodeUrl" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Ver código</a>
     </div>
   </div>
+  
+  <!-- Instructions Modal using native dialog -->
+  <dialog #instructionsModal class="modal-dialog" (click)="closeInstructions($event)">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <div class="modal-header">
+        <h4>Instrucciones del Proyecto</h4>
+        <button class="close-btn" (click)="closeInstructions($event)">&times;</button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li *ngFor="let rule of project.instructions">{{ rule }}</li>
+        </ul>
+      </div>
+    </div>
+  </dialog>
 </div>

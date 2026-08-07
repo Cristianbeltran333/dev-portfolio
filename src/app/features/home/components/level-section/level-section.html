@@ -5,7 +5,11 @@
       <p class="section-subtitle">{{ subtitle }}</p>
     </div>
     
-    <div class="projects-grid" *ngIf="projects.length > 0; else noProjects">
+    <div class="projects-grid" 
+         #scrollContainer 
+         *ngIf="projects.length > 0; else noProjects"
+         (touchstart)="pauseScroll()" 
+         (touchend)="resumeScroll()">
       <app-project-card *ngFor="let project of projects" [project]="project"></app-project-card>
     </div>
     

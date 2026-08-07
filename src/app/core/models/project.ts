@@ -9,4 +9,5 @@ export interface Project {
   liveDemoUrl: string;
   viewCodeUrl: string;
   imageUrl: string;
+  instructions?: string[];
 }

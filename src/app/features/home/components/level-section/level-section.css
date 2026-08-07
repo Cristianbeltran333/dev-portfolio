@@ -36,9 +36,40 @@
 }
 
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 2rem;
+  display: flex;
+  overflow-x: auto;
+  gap: 1.5rem;
+  padding-bottom: 1.5rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  /* Hide scrollbar for a cleaner look */
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+.projects-grid::-webkit-scrollbar {
+  display: none;
+}
+
+/* App-project-card child */
+.projects-grid > * {
+  flex: 0 0 85%;
+  max-width: 380px;
+  scroll-snap-align: center;
+}
+
+@media (min-width: 768px) {
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+    overflow-x: visible;
+    padding-bottom: 0;
+  }
+  
+  .projects-grid > * {
+    max-width: none;
+  }
 }
 
 .empty-state {

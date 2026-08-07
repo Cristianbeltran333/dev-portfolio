@@ -2,6 +2,31 @@ import { Project } from '../models/project';
 
 export const PROJECTS_DATA: Project[] = [
   {
+    id: 'typing-speed-test',
+    name: 'Prueba de velocidad de escritura',
+    description: 'Crea una prueba de velocidad de escritura que calcule palabras por minuto (ppm) y precisión. Un proyecto divertido para practicar la manipulación del DOM y el uso de temporizadores.',
+    difficulty: 'Junior',
+    technologies: ['HTML', 'CSS', 'JS'],
+    liveDemoUrl: 'https://typing-speed-test-seven-amber.vercel.app/',
+    viewCodeUrl: 'https://github.com/Cristianbeltran333/typing-speed-test',
+    imageUrl: '/images/typing-speed-test.webp',
+    instructions: [
+      'Inicie una prueba haciendo clic en el botón de inicio o haciendo clic en el texto y escribiendo.',
+      'Seleccione un nivel de dificultad (Fácil, Medio, Difícil) para pasajes de complejidad variable.',
+      'Cambia entre el modo "Temporizador (60 s)" y el modo "Paso" (el temporizador cuenta hacia adelante, sin límite).',
+      'Reinicia en cualquier momento para obtener un nuevo pasaje aleatorio de la dificultad seleccionada.',
+      'Consulta en tiempo real las estadísticas de palabras por minuto, precisión y tiempo mientras escribes.',
+      'Vea la retroalimentación visual que muestra los caracteres correctos (verde), los errores (rojo/subrayado) y la posición del cursor.',
+      'Corrige los errores con la tecla de retroceso (los errores originales siguen afectando la precisión).',
+      'Vea los resultados que muestran palabras por minuto, precisión y caracteres (correctos/incorrectos) después de completar una prueba.',
+      'Verán un mensaje de "¡Línea de base establecida!" en su primera prueba, estableciendo su mejor marca personal.',
+      '¡Observa una celebración con confeti y el grito de "¡Puntuación máxima superada!" cuando superen su mejor marca personal!',
+      'Que sus mejores marcas personales se conserven entre sesiones mediante el almacenamiento local.',
+      'Visualiza el diseño óptimo según el tamaño de la pantalla de tu dispositivo.',
+      'Consulte los estados de desplazamiento y enfoque para todos los elementos interactivos.'
+    ]
+  },
+  {
     id: 'hotel-booking-confirmation-page',
     name: 'Página de confirmación de reserva de hotel',
     description: 'Practica el diseño y la tipografía creando esta página de confirmación de reserva de un hotel boutique, que incluye tarjetas superpuestas, una barra lateral con la marca y un diseño totalmente adaptable.',
