@@ -2,6 +2,16 @@ import { Project } from '../models/project';
 
 export const PROJECTS_DATA: Project[] = [
   {
+    id: 'browser-extension-manager-ui',
+    name: 'Interfaz de usuario del administrador de extensiones del navegador',
+    description: '¡Este proyecto será una forma divertida de practicar el trabajo con datos dinámicos, el filtrado de datos, la aplicación de temas de color, la creación de una cuadrícula adaptable y mucho más!',
+    difficulty: 'Junior',
+    technologies: ['HTML', 'CSS', 'JS'],
+    liveDemoUrl: 'https://browser-extension-manager-ui-rho-rouge.vercel.app/',
+    viewCodeUrl: 'https://github.com/Cristianbeltran333/browser-extension-manager-ui',
+    imageUrl: '/images/browser-extension-manager-ui.webp'
+  },
+  {
     id: 'typing-speed-test',
     name: 'Prueba de velocidad de escritura',
     description: 'Crea una prueba de velocidad de escritura que calcule palabras por minuto (ppm) y precisión. Un proyecto divertido para practicar la manipulación del DOM y el uso de temporizadores.',
